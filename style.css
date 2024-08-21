@@ -376,7 +376,7 @@ section{
     display: grid;
     grid-template-columns: repeat(2, 100%);
     grid-template-rows: 100%;
-    overflow-x: auto;
+    overflow-x: hidden;
 }
 .btn-commande{
     position: absolute;
