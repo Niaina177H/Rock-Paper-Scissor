@@ -215,12 +215,7 @@ function gameswaping(e, types){
             e.querySelector(".rules img").src = "./images/image-rules.svg"
         })
     }else{
-        window.innerHeight
-        gameContent.style.overflow = 'auto'
-        setTimeout(()=>{
-            gameContent.style.overflow = 'hidden'
-        }, 0)
-        gameContent.scrollLeft = gameContent.scrollLeftMax
+        gameContent.scrollLeft = gameContent.scrollWidth - gameContent.clientWidth
         scoreText.innerText = localStorage.scorebonus
         const other = "Spock, lizard"
         other.split(", ").forEach(e => {
