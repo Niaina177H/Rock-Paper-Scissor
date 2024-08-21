@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+  <title>Rock, Paper, Scissors</title>
+</head>
+<body>
+  <div id="root">
+    <button id="bonus-button">BONUS</button>
+    <header>
+      <ul>
+        <li>Rock</li>
+        <li>Paper</li>
+        <li>Scissors</li>
+      </ul>
+      <div id="Score">
+        <h4>SCORE</h4>
+        <p id="score-tg">0</p>
+      </div>
+    </header>
+    <section>
+      <div id="game-content">
+        <div id="game-simple">
+          <img src="./images/bg-triangle.svg" alt="" class="bg-triangle">
+          <div id="paper" class="btn-commande"><div><img src="./images/icon-paper.svg" alt=""></div></div>
+          <div id="scissor" class="btn-commande"><div><img src="./images/icon-scissors.svg" alt=""></div></div>
+          <div id="rock" class="btn-commande"><div><img src="./images/icon-rock.svg" alt=""></div></div>
+        </div>
+        <div id="game-bonus">
+          <img src="./images/bg-pentagon.svg" alt="" class="bg-pentagon">
+          <div id="paperbonus" class="btn-commande-bonus"><div><img src="./images/icon-paper.svg" alt=""></div></div>
+          <div id="scissorbonus" class="btn-commande-bonus"><div><img src="./images/icon-scissors.svg" alt=""></div></div>
+          <div id="rockbonus" class="btn-commande-bonus"><div><img src="./images/icon-rock.svg" alt=""></div></div>
+          <div id="lizardbonus" class="btn-commande-bonus"><div><img src="./images/icon-lizard.svg" alt=""></div></div>
+          <div id="spockbonus" class="btn-commande-bonus"><div><img src="./images/icon-spock.svg" alt=""></div></div>
+        </div>
+        <div id="message-resultat">
+          <p></p>
+          <button id="play-again">
+            PLAY AGAIN
+          </button>
+        </div>
+        <div id="message-resultat-bonus">
+          <p></p>
+          <button id="play-again-bonus">
+            PLAY AGAIN
+          </button>
+        </div>
+      </div>
+      <div id="bouton">
+        <button class="btn"><strong>RULES</strong></button>
+      </div>
+    </section>
+  </div>
+  <div class="modal-rules">
+    <div class="head">
+      <h2>RULES</h2>
+      <button><img src="./images/icon-close.svg" /></button>
+    </div>  
+    <div class="rules">
+      <img src="./images/image-rules.svg">
+    </div>
+  </div>
+  <div class="modal-rules-mobiles">
+    <div class="head">
+      <h2>RULES</h2>
+      <span></span>
+    </div>  
+    <div class="rules">
+      <img src="./images/image-rules.svg">
+    </div>
+    <div class="foot">
+      <button>
+        <img src="./images/icon-close.svg" alt="">
+      </button>
+    </div>
+  </div>
+</body>
+</html>
