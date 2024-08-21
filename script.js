@@ -215,6 +215,7 @@ function gameswaping(e, types){
             e.querySelector(".rules img").src = "./images/image-rules.svg"
         })
     }else{
+        window.innerHeight
         gameContent.style.overflow = 'auto'
         setTimeout(()=>{
             gameContent.style.overflow = 'hidden'
